@@ -10,8 +10,11 @@
 
 (defun make-org-name (name)
   (concat home common-notes-prefix name))
-(make-org-files)
-(mapcar (lambda x))
+; I can't find a single reference to this anywhere. Nothing... So is this something mikey
+; has in his .emacs??? I would guess so.
+;(make-org-files)
+; this isn't even valid lisp....
+;(mapcar (lambda x))
 (setq org-tickler-file (make-org-name "tickler.org")
       org-todo-file (make-org-name "todo.org")
       org-notes-file (make-org-name "notes.org")
