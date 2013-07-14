@@ -68,3 +68,6 @@
 [submodule "site-lisp/inf-ruby"]
 	path = site-lisp/inf-ruby
 	url = https://github.com/nonsequitur/inf-ruby.git
+[submodule "site-lisp/switch-window"]
+	path = site-lisp/switch-window
+	url = https://github.com/dimitri/switch-window.git
