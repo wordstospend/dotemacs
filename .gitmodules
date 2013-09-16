@@ -1,6 +1,3 @@
-[submodlue "site-lisp/switch-window"]
-	path = site-lisp/switch-window
-	url = https://github.com/dimitri/switch-window.git
 [submodule "site-lisp/powerline"]
 	path = site-lisp/powerline
 	url = https://github.com/jonathanchu/emacs-powerline.git
@@ -64,7 +61,6 @@
 [submodule "site-lisp/multiple-cursors"]
 	path = site-lisp/multiple-cursors
 	url = https://github.com/magnars/multiple-cursors.el.git
-
 [submodule "site-lisp/zossima"]
 	path = site-lisp/zossima
 	url = https://github.com/technomancy/zossima.git

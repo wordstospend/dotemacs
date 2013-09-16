@@ -2,7 +2,9 @@
 	       load-ido ; Loads ido-mode and various tweaks for it
 	       load-globals ; Load all the global always-on modes
 	       load-colors ; Set up  my color theme
-	       load-org ; Set up my org-mode files and tweaks
+           ;load-mobile-org ; my basic org-mode setup  may confict with load-org
+	       ;load-org ; Set up my org-mode files and tweaks
+           load-orgmode ; Nathan's org mode setup
 	       load-autocomplete ; Set up autocompletion based on dabbrev
 	       load-saves ; Set up saving current place in buffer
 	       load-compile ; mode-compile does smart compiling based on buffer
@@ -23,4 +25,3 @@
 	       ;load-eclim ; Emacs-eclipse cooperation !!!
            load-appt ; Tweaks to appt, and custom growl/ring sound
 	       ))
-
