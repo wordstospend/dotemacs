@@ -38,6 +38,7 @@
 ;  and lets me pick heading and subheading (level <= 2)
 (setq org-refile-use-outline-path "file")
 
+
 (setq org-default-notes-file (concat org-directory "/inbox.org"))
 (define-key global-map "\C-cc" 'org-capture)
 (setq org-capture-templates
@@ -45,7 +46,6 @@
         ("t" "Todo" entry (file+headline "~/org/gtd.org" "Inbox")
 	 "* TODO %?\n  %i\n ")
         ))
-
 
 ;; not working for some reason
 (defadvice org-capture-bounce-to
@@ -63,7 +63,17 @@
         ("tw" "todo at work" tags "+4say+TODO=\"TODO\"")
         ("tp" "todo personl" tags "+4personal+TODO=\"TODO\"")
         ("tt" "todo tree" tags-tree "+4personal+TODO=\"TODO\"")
+        ("ta" "complete tree" tags-tree "+TODO=\"TODO\"")
         ))
 
 ;; exit from an agenda goes back to previous state of windows
 (setq org-agenda-restore-windows-after-quit t)
+
+;; setting my ditaa location
+(setq org-ditaa-jar-path "~/java/ditaa0_9.jar")
+(org-babel-do-load-languages
+ (quote org-babel-load-languages)
+ (quote ((emacs-lisp . t)
+         (ditaa . t)
+         (org . t)
+         )))
